@@ -1,18 +1,19 @@
 <script lang='ts'>
     const navItems = [
-        {label: "Home", a: "/"},
+        {label: "MedFlex Tech", a: "/"},
+        {label: "Research", a: "/Research"},
         {label: "Concept Designs", a:"/ConceptDesigns"},
-        {label: "Our Team", a:"/OurTeam"}
+        {label: "Progress", a:"/Progress"},
+        {label: "Team", a:"/Team"}
     ];
 </script>
 
 <style>
     nav{
         height: 45px;
-
     }
     a{
-        color: #fff;
+        color: black;
         text-decoration: none;
         display: float;
         height: 45px;
