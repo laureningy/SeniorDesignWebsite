@@ -1,4 +1,7 @@
 <script lang='ts'>
+    import '@fontsource-variable/oswald';
+    import '@fontsource-variable/quicksand';
+    
     const navItems = [
         {label: "MedFlex Tech", a: "/"},
         {label: "Research", a: "/Research"},
