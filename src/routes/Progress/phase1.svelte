@@ -6,3 +6,12 @@
     <li>Brainstormed questions</li>
     <li>Began research</li>
 </ul>
+<style>
+     h3{
+        font-family: "Oswald Variable", sans-serif;
+        font-weight: 400;
+    }
+   p,ul,li{
+       font-family: "Quicksand", sans-serif;
+   }
+</style>

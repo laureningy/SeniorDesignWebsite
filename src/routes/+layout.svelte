@@ -13,7 +13,12 @@
 
 <style>
     nav{
-        height: 45px;
+        height: 35px;
+        margin-top: 15px;
+    }
+    hr{
+        border-top: 1px solid #699BF7;
+        margin-top: 0%;
     }
     a{
         color: black;
@@ -31,4 +36,5 @@
         <a href={item.a}>{item.label}</a>
     {/each}
 </nav>
+<hr>
 <slot></slot>
