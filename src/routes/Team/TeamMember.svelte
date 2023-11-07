@@ -37,4 +37,9 @@
   .team-member-info {
     flex: 1; 
   }
+
+  h2{
+    font-family: 'Oswald Variable', sans-serif;
+    font-weight: 400;
+  }
   </style>

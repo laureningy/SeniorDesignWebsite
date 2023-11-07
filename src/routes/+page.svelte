@@ -15,16 +15,14 @@
 
 <h2>MedFlex Duo</h2>
 <hr>
-<p>About the project</p>
+<p>By combining prescription level bone growth and muscle stimulation into one, we are bringing office level care to you on your own time.
+    In combination with MedFlex Connect, our mobile application, you will be able to recieve custom treatments from your provider.
+
+</p>
 
 <h2>Project Mission</h2>
 <hr>
-<p>Mission and Goals</p>
-
-
-
-
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<p>To help take the stress out of patient recovery.</p>
 
 <style >
     .imgbox {
@@ -64,7 +62,7 @@
         padding: 0%;
     }
     p{
-        font-family: "Quicksand", sans-serif;
+        font-family: "Quicksand Variable", sans-serif;
     }
 
 </style>

@@ -8,6 +8,7 @@
 	import Phase4 from "./phase4.svelte";
 	import Phase5 from "./phase5.svelte";
 	import Phase6 from "./phase6.svelte";
+
 </script>
 <style>
 	 h1,h2{

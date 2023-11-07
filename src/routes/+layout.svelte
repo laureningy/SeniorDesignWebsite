@@ -29,6 +29,7 @@
         padding: 0 10px;
         font-size: 16px;
     }
+   
 </style>
 
 <nav>
