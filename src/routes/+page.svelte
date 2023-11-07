@@ -1,13 +1,46 @@
 <script lang="ts">
-    let src = "src/lib/images/placeholder.png";
-</script>
+    let src = "src/lib/images/MedFlexTechLogo.png";
+  
+    // Function to invert image colors
+    function invertImageColors() {
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+  
+      const img = new Image();
+      img.src = src;
+  
+      img.onload = () => {
+        canvas.width = img.width;
+        canvas.height = img.height;
+  
+        // Draw the image on the canvas
+        ctx.drawImage(img, 0, 0, img.width, img.height);
+  
+        // Get the image data
+        const imageData = ctx.getImageData(0, 0, img.width, img.height);
+        const data = imageData.data;
+  
+        // Invert the colors by modifying each pixel
+        for (let i = 0; i < data.length; i += 4) {
+          data[i] = 255 - data[i]; // Red
+          data[i + 1] = 255 - data[i + 1]; // Green
+          data[i + 2] = 255 - data[i + 2]; // Blue
+        }
+  
+        // Put the modified image data back to the canvas
+        ctx.putImageData(imageData, 0, 0);
+  
+        // Update the src with the inverted image
+        src = canvas.toDataURL();
+      };
+    }
+    
+    invertImageColors(); // Automatically invert the image colors when the page loads
+  </script>
 
 <div id="wrapper">
     <div class="imgbox">
         <img class="center-fit" {src} alt="MedFlex Duo Device"/>
-    </div>
-    <div id="title">
-        <h1>MedFlex Tech</h1>
     </div>
 </div>
 
