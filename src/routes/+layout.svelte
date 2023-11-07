@@ -7,7 +7,8 @@
         {label: "Research", a: "/Research"},
         {label: "Concept Designs", a:"/ConceptDesigns"},
         {label: "Progress", a:"/Progress"},
-        {label: "Team", a:"/Team"}
+        {label: "Team", a:"/Team"},
+        {label: "Contact Us", a:"/ContactUs"}
     ];
 </script>
 
