@@ -12,17 +12,20 @@
 </div>
 
 
+<div class="section">
+    <h2>MedFlex Duo</h2>
+    <hr>
+    <p>By combining prescription level bone growth and muscle stimulation into one, we are bringing office level care to you on your own time.
+        In combination with MedFlex Connect, our mobile application, you will be able to recieve custom treatments from your provider.
 
-<h2>MedFlex Duo</h2>
-<hr>
-<p>By combining prescription level bone growth and muscle stimulation into one, we are bringing office level care to you on your own time.
-    In combination with MedFlex Connect, our mobile application, you will be able to recieve custom treatments from your provider.
+    </p>
+</div>
 
-</p>
-
-<h2>Project Mission</h2>
-<hr>
-<p>To help take the stress out of patient recovery.</p>
+<div class="section">
+    <h2>Project Mission</h2>
+    <hr>
+    <p>To help take the stress out of patient recovery.</p>
+</div>
 
 <style >
     .imgbox {
@@ -42,7 +45,9 @@
     #wrapper{
         display: grid;
     }
-    
+    .section{
+        margin: 5%;
+    }
     h1,h2{
         font-family: "Oswald Variable", sans-serif;
     }
@@ -63,6 +68,8 @@
     }
     p{
         font-family: "Quicksand Variable", sans-serif;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
 </style>

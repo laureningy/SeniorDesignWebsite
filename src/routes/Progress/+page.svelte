@@ -10,28 +10,64 @@
 	import Phase6 from "./phase6.svelte";
 
 </script>
+
+<div id="page">
+	<h1>Progress</h1>
+
+	<h2>Phase 1</h2>
+	<hr>
+	<div class="section">
+	<Phase1 />
+	</div>
+
+	<h2>Phase 2</h2>
+	<hr>
+	<div class="section">
+		<Phase2 />
+	</div>
+
+	<h2>Phase 3</h2>
+	<hr>
+	<div class="section">
+		<Phase3 />
+	</div>
+
+	<h2>Phase 4</h2>
+	<hr>
+	<div class="section">
+		<Phase4 />
+	</div>
+
+	<h2>Phase 5</h2>
+	<hr>
+	<div class="section">
+		<Phase5 />
+	</div>
+
+	<h2>Phase 6</h2>
+	<hr>
+	<div class="section">
+		<Phase6 />
+	</div>
+</div>
+
 <style>
-	 h1,h2{
-        font-family: "Oswald Variable", sans-serif;
+	h1,h2{
+	   font-family: "Oswald Variable", sans-serif;
+	   font-weight: 500;
+	   margin-bottom: 0%;
+   }
+   #page{
+	margin-left: 3%;
+	margin-right: 3%;
+   }
+   .section{
+	margin-left: 5%;
+	margin-right: 5%;
+   }
+   hr{
+        border-top: 2px solid #194AA4;
+        border-radius: 1px;
+        padding: 0%;
     }
 </style>
-
-<h1>Progress</h1>
-
-<h2>Phase 1</h2>
-<Phase1 />
-
-<h2>Phase 2</h2>
-<Phase2/> 
-
-<h2>Phase 3</h2>
-<Phase3 />
-
-<h2>Phase 4</h2>
-<Phase4/>
-
-<h2>Phase 5</h2>
-<Phase5 />
-
-<h2>Phase 6</h2>
-<Phase6/>
