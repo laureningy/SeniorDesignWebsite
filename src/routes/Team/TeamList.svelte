@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import TeamMember from './TeamMember.svelte';
   
     export let team;
