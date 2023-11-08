@@ -1,7 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
   
-    let src = "src/lib/images/MedFlexTechLogo.png";
+    let src = "/MedFlexTechLogo.png";
   
     // Function to invert image colors
     function invertImageColors() {

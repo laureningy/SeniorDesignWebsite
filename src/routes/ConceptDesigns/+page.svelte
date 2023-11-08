@@ -1,7 +1,7 @@
 <script>
-    let sketch1 = 'src/lib/images/Sketch1.jpg';
-    let sketch2 = 'src/lib/images/Sketch2.jpg';
-    let sketch3 = 'src/lib/images/Sketch3.jpg';
+    let sketch1 = '/Sketch1.jpg';
+    let sketch2 = '/Sketch2.jpg';
+    let sketch3 = '/Sketch3.jpg';
 
 </script>
 

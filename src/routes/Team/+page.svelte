@@ -7,7 +7,7 @@
       name: 'Eshan Sharma',
       role: 'Software Engineer',
       bio: '',
-      imageSrc: '/images/EshanPhoto.jpg', 
+      imageSrc: '', 
     },
     {
       id: 2,
@@ -21,28 +21,28 @@
       name: 'Colin Keady',
       role: 'Mechanical Engineer',
       bio: '',
-      imageSrc: './images/ColinPhoto.jpeg',
+      imageSrc: './ColinPhoto.jpeg',
     },
     {
       id: 4,
       name: 'Michael Goodall',
       role: 'Mechanical Engineer',
       bio: '',
-      imageSrc: '/images/MikePhoto.jpg',
+      imageSrc: '/MikePhoto.JPG',
     },
     {
       id: 5,
       name: 'Nicholas Dahdah',
       role: 'Mechanical Engineer',
       bio: '',
-      imageSrc: '/images/NickPhoto.jpg',
+      imageSrc: '/NickPhoto.jpg',
     },
     {
       id: 6,
       name: 'Nicole Waletzki',
       role: 'Mechanical Engineer',
       bio: '',
-      imageSrc: '/images/NicolePhoto.jpeg',
+      imageSrc: '/NicolePhoto.jpeg',
     },
   ];
 </script>
