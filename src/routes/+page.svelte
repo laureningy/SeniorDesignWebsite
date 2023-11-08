@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { onMount } from 'svelte';
+  
     let src = "src/lib/images/MedFlexTechLogo.png";
   
     // Function to invert image colors
@@ -34,8 +36,10 @@
         src = canvas.toDataURL();
       };
     }
-    
-    invertImageColors(); // Automatically invert the image colors when the page loads
+  
+    onMount(() => {
+      invertImageColors(); // Automatically invert the image colors when the component is mounted (client-side).
+    });
   </script>
 
 <div id="wrapper">

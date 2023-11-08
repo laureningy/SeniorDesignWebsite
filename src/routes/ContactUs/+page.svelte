@@ -9,6 +9,15 @@
         instagram: 'https://instagram.com',
       },
     };
+
+    // Define a function to handle form submission
+  function submitForm(event) {
+    event.preventDefault();
+
+    // You can add your form submission logic here
+    console.log('Form submitted');
+  }
+  
   </script>
   
   <div class="contact-us">
