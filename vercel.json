@@ -4,7 +4,6 @@
     "cleanUrls": true,
     "trailingSlash": false,
     "source": "/public", 
-    "headers": [],
     "routes": [],
     "functions": {},
     "headers": [
