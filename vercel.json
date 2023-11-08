@@ -3,7 +3,6 @@
     "redirects": [],
     "cleanUrls": true,
     "trailingSlash": false,
-    "source": "/public", 
     "routes": [],
     "functions": {},
     "headers": [
@@ -17,5 +16,4 @@
         ]
       }
     ]
-  }
-  
+}
