@@ -1,6 +1,22 @@
 {
-    "rewrites": [
-      { "source": "/images/:image*", "destination": "/public/images/:image" }
+    "rewrites": [],
+    "redirects": [],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "source": "/public", 
+    "headers": [],
+    "routes": [],
+    "functions": {},
+    "headers": [
+      {
+        "source": "/images/(.*)", 
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"  
+          }
+        ]
+      }
     ]
   }
   
