@@ -52,3 +52,9 @@
       <button type="submit">Submit</button>
     </form>
   </div>
+
+  <style>
+    .contact-us{
+      margin-top: 45px;
+    }
+  </style>

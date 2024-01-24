@@ -1,53 +1,61 @@
 <script lang="ts">
     import { onMount } from 'svelte';
   
-    let src = "/MedFlexTechLogo.png";
-  
-    // Function to invert image colors
-    function invertImageColors() {
-      const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d');
-  
-      const img = new Image();
-      img.src = src;
-  
-      img.onload = () => {
-        canvas.width = img.width;
-        canvas.height = img.height;
-  
-        // Draw the image on the canvas
-        ctx.drawImage(img, 0, 0, img.width, img.height);
-  
-        // Get the image data
-        const imageData = ctx.getImageData(0, 0, img.width, img.height);
-        const data = imageData.data;
-  
-        // Invert the colors by modifying each pixel
-        for (let i = 0; i < data.length; i += 4) {
-          data[i] = 255 - data[i]; // Red
-          data[i + 1] = 255 - data[i + 1]; // Green
-          data[i + 2] = 255 - data[i + 2]; // Blue
-        }
-  
-        // Put the modified image data back to the canvas
-        ctx.putImageData(imageData, 0, 0);
-  
-        // Update the src with the inverted image
-        src = canvas.toDataURL();
-      };
-    }
-  
-    onMount(() => {
-      invertImageColors(); // Automatically invert the image colors when the component is mounted (client-side).
-    });
+    let src = "/Logo.svg";
+    let team = [
+    {
+      id: 1,
+      name: 'Eshan Sharma',
+      role: 'Software Engineer',
+      bio: '',
+      imageSrc: '/EshanPhoto.jpg', 
+    },
+    {
+      id: 2,
+      name: 'Lauren Ingraham',
+      role: 'Software Engineer',
+      bio: '',
+      imageSrc: '/LaurenPhoto.jpg',
+    },
+    {
+      id: 3,
+      name: 'Colin Keady',
+      role: 'Mechanical Engineer',
+      bio: '',
+      imageSrc: './ColinPhoto.jpg',
+    },
+    {
+      id: 4,
+      name: 'Michael Goodall',
+      role: 'Mechanical Engineer',
+      bio: '',
+      imageSrc: '/MikePhoto.jpg',
+    },
+    {
+      id: 5,
+      name: 'Nicholas Dahdah',
+      role: 'Mechanical Engineer',
+      bio: '',
+      imageSrc: '/NickPhoto.jpg',
+    },
+    {
+      id: 6,
+      name: 'Nicole Waletzki',
+      role: 'Mechanical Engineer',
+      bio: '',
+      imageSrc: '/NicolePhoto.jpg',
+    },
+  ];
+
+
   </script>
 
-<div id="wrapper">
+<div id="wrapper" class="title">
     <div class="imgbox">
         <img class="center-fit" {src} alt="MedFlex Duo Device"/>
     </div>
 </div>
-
+<div class="spacer layer1" ></div>
 
 <div class="section">
     <h2>MedFlex Duo</h2>
@@ -61,8 +69,47 @@
 <div class="section">
     <h2>Project Mission</h2>
     <hr>
-    <p>To help take the stress out of patient recovery.</p>
+    <p>MedFlex Tech is committed to aiding patients in the recovery process who need the convenience of at home 
+        treatment options, so that they can focus on what matters to them while healing. MedFlex Duo is a 
+        medical device that combines prescription level muscle and bone growth stimulation utilizing innovative
+         technologies that make patient care more accessible. In combination with the mobile application 
+         MedFlex Connect, comprehensive care can be provided at home with treatment and physician interactions.
+          MedFlex Tech will provide patients with the care they deserve, with faster, easier, and just as 
+          effective treatments. </p>
 </div>
+
+<div class="circle layer2">
+    <div class="row">
+        {#each team as item}
+            {#if item.id <= 3 }
+            <div class="column">
+                <img src={item.imageSrc} alt={item.name}>
+                <div class="description">
+                    <h4 class="descriptionText">{item.name}</h4>
+                    <p class="descriptionText">{item.role}</p>
+                    <p class="descriptionText">{item.bio}</p>
+                </div>
+            </div>
+            {/if}
+        {/each} 
+    </div>
+    <h3>Meet Our Team</h3>
+    <div class="row">
+        {#each team as item}
+            {#if item.id > 3 }
+            <div class="column">
+                <img src={item.imageSrc} alt={item.name}>
+                <div class="description">
+                    <h4 class="descriptionText">{item.name}</h4>
+                    <p class="descriptionText">{item.role}</p>
+                    <p class="descriptionText">{item.bio}</p>
+                </div>
+            </div>
+            {/if}
+        {/each} 
+    </div>
+</div>
+
 
 <style >
     .imgbox {
@@ -74,28 +121,43 @@
         max-height: 100vh;
         margin: auto;
     }
-    #title{
-        position: relative;
-        height: 60px;
-        top: -120%;
+    .line{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    svg{
+        display: inline-block;
+  
+    }
+    .title{
+        background-color: #CDDEFF;
+        padding-top: 5%;
+        width: 100%;
     }
     #wrapper{
         display: grid;
+        position: relative;
     }
     .section{
         margin: 5%;
+        position: relative;
+ 
     }
-    h1,h2{
-        font-family: "Oswald Variable", sans-serif;
+    h3,h2{
+        font-family: "Readex Pro Variable", sans-serif;
+        font-weight: 500;
     }
 
-    h1{
+    h3{
         text-align: center;
         font-size: 52px;
+        margin: 0%;
     }
 
     h2{
-        font-weight: 500;
         margin-bottom: 0;
     }
     hr{
@@ -108,5 +170,56 @@
         margin-left: 2%;
         margin-right: 2%;
     }
+    .spacer{
+        aspect-ratio: 960/300;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 150px;
+    }
+    .layer1 {
+        background-image: url('./layered-waves.svg');
+    }
+    .layer2{
+        background-image: url(./Circles.svg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 800px;
+        width: 100%;
+    }
+    .row {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .column {
+        align-content: space-evenly;
+        padding-left: 30px;
+        padding-right: 30px;
+        position: relative;
+    }
+    @media (hover: hover){
+        .description{
+            position: absolute;
+            background-color: rgba(25,74,164,.85);
+            color: white;
+            visibility: hidden;
+            top: 0;
+            left: 30px;
+            width: 203px;
+            height: 257px;
+        }
+        .descriptionText{
+            padding-left: 8px;
+            margin-bottom: 0;
+            width: 100%;
+        }
+        .column:hover .description{
+            visibility: visible;
+        }
+    }
+
 
 </style>

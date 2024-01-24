@@ -27,6 +27,7 @@
 	"dependencies": {
 		"@fontsource-variable/oswald": "^5.0.17",
 		"@fontsource-variable/quicksand": "^5.0.15",
+		"@fontsource-variable/readex-pro": "^5.0.8",
 		"svelte-page-progress": "^1.0.1"
 	}
 }
