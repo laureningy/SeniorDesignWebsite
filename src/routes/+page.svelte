@@ -178,10 +178,10 @@
         height: 150px;
     }
     .layer1 {
-        background-image: url('./layered-waves.svg');
+        background-image: url('/layered-waves.svg');
     }
     .layer2{
-        background-image: url(./Circles.svg);
+        background-image: url('/Circles.svg');
         background-size:cover;
         background-repeat: no-repeat;
         background-position: center;
