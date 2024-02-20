@@ -53,13 +53,14 @@
 
 <style>
 	h1,h2{
-	   font-family: "Oswald Variable", sans-serif;
+	   font-family: "Readex Pro Variable", sans-serif;
 	   font-weight: 500;
 	   margin-bottom: 0%;
    }
    #page{
-	margin-left: 3%;
-	margin-right: 3%;
+	margin-top: 60px;
+	margin-left: 10%;
+	margin-right: 10%;
    }
    .section{
 	margin-left: 5%;

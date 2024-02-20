@@ -29,7 +29,7 @@
       name: 'Michael Goodall',
       role: 'Mechanical Engineer',
       bio: '',
-      imageSrc: '/MikePhoto.jpg',
+      imageSrc: '/MikePhoto.JPG',
     },
     {
       id: 5,
