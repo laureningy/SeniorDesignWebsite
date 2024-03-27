@@ -58,6 +58,18 @@
 <div class="spacer layer1" ></div>
 
 <div class="section">
+    <h2>Problem Statement</h2>
+    <hr>
+    <p>
+        When patients are receiving treatment for broken bones or recovering from surgery, they may find themselves having to travel back and forth between doctor’s offices to receive all the treatment that they need. 
+        The goal of this project is to create a device that combines bone stimulation and muscle stimulation into one to eliminate back and forth travel. 
+        Additionally, this device would be designed to be able to provide at home treatment to patients and would be prescribed by a doctor. 
+        Major design considerations for this device include choosing a method for bone stimulation and creating a device that is compatible with multiple areas of the body. 
+        These challenges need to be considered to provide patients with easy usability to provide office level treatments at home.
+    </p>
+</div>
+
+<div class="section">
     <h2>MedFlex Duo</h2>
     <hr>
     <p>By combining prescription level bone growth and muscle stimulation into one, we are bringing office level care to you on your own time.
@@ -142,7 +154,9 @@
         position: relative;
     }
     .section{
-        margin: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 5%;
         position: relative;
  
     }

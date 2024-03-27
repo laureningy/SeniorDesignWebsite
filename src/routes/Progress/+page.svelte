@@ -50,8 +50,8 @@
     }
     #page {
         margin-top: 60px;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
     .section {
         margin-left: 5%;
