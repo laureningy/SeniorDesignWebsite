@@ -5,8 +5,6 @@
 
 </script>
 
-<h1>Concept Designs</h1>
-
 <h2>Technical Analyses</h2>
 
 <hr>
@@ -20,7 +18,7 @@
 <img src={sketch3} alt="sketch 3"> 
 
 <style>
-    h1, h2{
+    h2{
         font-family: 'Oswald Variable', sans-serif;
         font-weight: 500;
     }
