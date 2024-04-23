@@ -89,7 +89,7 @@
             <li class="right">
 				<Menu>
 					<span slot='toggle'>Prototypes</span>
-                        <MenuItem><a href="/FinalPrototype">Final Prototype</a></MenuItem>
+                        <!-- <MenuItem><a href="/FinalPrototype">Final Prototype</a></MenuItem> -->
                         <MenuItem><a href="/Software">Software</a></MenuItem>
                         <MenuItem><a href="/BetaPrototype">Beta Prototype</a></MenuItem>
                         <MenuItem><a href="/AlphaPrototype">Alpha Prototype</a></MenuItem>
